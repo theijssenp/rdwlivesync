@@ -31,6 +31,11 @@ public class RdwlivesyncApplication implements CommandLineRunner {
 		return myAppProperties.getEsserverip();
 	}
 
+	@GetMapping("/dagen")
+	public String getDagen() {
+		return myAppProperties.getDagen();
+	}
+
 	public static void main(String[] args) {
 		while (true) {
 			try {
@@ -50,6 +55,13 @@ public class RdwlivesyncApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		String esserverip = this.getEsserverip();
+		int dagen;
+		try {
+			dagen = Integer.parseInt(this.getDagen());
+		} catch (Exception e) {
+			dagen = 3;
+		}
+		System.out.println("Aantal dagen terug in de tijd "+ dagen);
 		System.out.println(esserverip);
 		SimpleDateFormat formatlogger = new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
 		Date logdate = new Date(System.currentTimeMillis());
@@ -58,7 +70,7 @@ public class RdwlivesyncApplication implements CommandLineRunner {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date(System.currentTimeMillis());
 		LocalDate start = LocalDate.parse(formatter.format(date).toString());
-		start = start.minusDays(3);
+		start = start.minusDays(dagen);
 		LocalDate end = LocalDate.parse(formatter.format(date).toString());
 
 		System.out.println("Start date " + start.toString().replace("-", ""));
