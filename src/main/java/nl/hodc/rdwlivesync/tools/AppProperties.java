@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 public class AppProperties {
     private String esserverip;
+    private String dagen;
 
     public AppProperties() {
     }
@@ -18,6 +19,14 @@ public class AppProperties {
 
     public void setEsserverip(String esserverip) {
         this.esserverip = esserverip;
+    }
+
+    public String getDagen() {
+        return dagen;
+    }
+
+    public void setDagen(String dagen) {
+        this.dagen = dagen;
     }
 
 }
