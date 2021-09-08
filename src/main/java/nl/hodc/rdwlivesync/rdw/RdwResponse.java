@@ -69,6 +69,8 @@ public class RdwResponse {
     private String aanhangwagenMiddenasGeremd;
     private String aantalStaanplaatsen;
     private String afwijkendeMaximumSnelheid;
+    private String jaarLaatsteRegistratieTellerstand;
+    private String tellerstandoordeel;
 
     @JsonProperty("kenteken")
     public String getKenteken() {
@@ -88,6 +90,16 @@ public class RdwResponse {
     @JsonProperty("aantal_cilinders")
     public void setAantalCilinders(String value) {
         this.aantalCilinders = value;
+    }
+    
+    @JsonProperty("tellerstandoordeel")
+    public String getTellerstandoordeel() {
+        return tellerstandoordeel;
+    }
+
+    @JsonProperty("tellerstandoordeel")
+    public void setTellerstandoordeel(String value) {
+        this.tellerstandoordeel = value;
     }
 
     @JsonProperty("afwijkende_maximum_snelheid")
@@ -708,6 +720,16 @@ public class RdwResponse {
     @JsonProperty("api_gekentekende_voertuigen_voertuigklasse")
     public void setAPIGekentekendeVoertuigenVoertuigklasse(String value) {
         this.apiGekentekendeVoertuigenVoertuigklasse = value;
+    }
+
+    @JsonProperty("jaar_laatste_registratie_tellerstand")
+    public void setJaarLaatsteRegistratieTellerstand(String value) {
+        this.jaarLaatsteRegistratieTellerstand = value;
+    }
+
+    @JsonProperty("jaar_laatste_registratie_tellerstand")
+    public String getJaarLaatsteRegistratieTellerstand() {
+        return jaarLaatsteRegistratieTellerstand;
     }
 
     public RdwResponse() {
