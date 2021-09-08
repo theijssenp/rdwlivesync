@@ -71,6 +71,8 @@ public class RdwResponse {
     private String afwijkendeMaximumSnelheid;
     private String jaarLaatsteRegistratieTellerstand;
     private String tellerstandoordeel;
+    private String codeToelichtingTellerstandoordeel;
+    private String tenaamstellenMogelijk;
 
     @JsonProperty("kenteken")
     public String getKenteken() {
@@ -91,7 +93,27 @@ public class RdwResponse {
     public void setAantalCilinders(String value) {
         this.aantalCilinders = value;
     }
-    
+
+    @JsonProperty("tenaamstellen_mogelijk")
+    public String getTenaamstellenMogelijk() {
+        return tenaamstellenMogelijk;
+    }
+
+    @JsonProperty("tenaamstellen_mogelijk")
+    public void setTenaamstellenMogelijk(String value) {
+        this.tenaamstellenMogelijk = value;
+    }
+
+    @JsonProperty("code_toelichting_tellerstandoordeel")
+    public String getCodeToelichtingTellerstandoordeel() {
+        return codeToelichtingTellerstandoordeel;
+    }
+
+    @JsonProperty("code_toelichting_tellerstandoordeel")
+    public void setCodeToelichtingTellerstandoordeel(String value) {
+        this.codeToelichtingTellerstandoordeel = value;
+    }
+
     @JsonProperty("tellerstandoordeel")
     public String getTellerstandoordeel() {
         return tellerstandoordeel;
