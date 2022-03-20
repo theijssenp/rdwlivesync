@@ -95,6 +95,40 @@ public class RdwResponse {
     private String maximumMassaTechnischMinimaal;
     private String wielbasisVoertuigMinimum;
     private String wielbasisVoertuigMaximum;
+    private String technischToelaatbaarMassaKoppelpunt;
+    private String typeRemsysteemVoertuigCode;
+    private String rupsonderstelconfiguratiecode;
+
+    @JsonProperty("rupsonderstelconfiguratiecode")
+    public String getRupsonderstelconfiguratiecode() {
+        return rupsonderstelconfiguratiecode;
+    }
+
+    @JsonProperty("rupsonderstelconfiguratiecode")
+    public void setRupsonderstelconfiguratiecode(String rupsonderstelconfiguratiecode) {
+        this.rupsonderstelconfiguratiecode = rupsonderstelconfiguratiecode;
+    }
+
+    @JsonProperty("type_remsysteem_voertuig_code")
+    public String getTypeRemsysteemVoertuigCode() {
+        return typeRemsysteemVoertuigCode;
+    }
+
+    @JsonProperty("type_remsysteem_voertuig_code")
+    public void setTypeRemsysteemVoertuigCode(String typeRemsysteemVoertuigCode) {
+        this.typeRemsysteemVoertuigCode = typeRemsysteemVoertuigCode;
+    }
+
+    @JsonProperty("technisch_toelaatbaar_massa_koppelpunt")
+
+    public String getTechnischToelaatbaarMassaKoppelpunt() {
+        return technischToelaatbaarMassaKoppelpunt;
+    }
+
+    @JsonProperty("technisch_toelaatbaar_massa_koppelpunt")
+    public void setTechnischToelaatbaarMassaKoppelpunt(String technischToelaatbaarMassaKoppelpunt) {
+        this.technischToelaatbaarMassaKoppelpunt = technischToelaatbaarMassaKoppelpunt;
+    }
 
     @JsonProperty("kenteken")
     public String getKenteken() {
@@ -146,8 +180,6 @@ public class RdwResponse {
     public void setMaximumMassaTechnischMaximaal(String maximumMassaTechnischMaximaal) {
         this.maximumMassaTechnischMaximaal = maximumMassaTechnischMaximaal;
     }
-
-  
 
     @JsonProperty("aantal_cilinders")
     public String getAantalCilinders() {
