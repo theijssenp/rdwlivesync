@@ -101,6 +101,11 @@ public class RdwResponse {
         return kenteken;
     }
 
+    @JsonProperty("kenteken")
+    public void setKenteken(String value) {
+        this.kenteken = value;
+    }
+
     @JsonProperty("wielbasis_voertuig_maximum")
     public String getWielbasisVoertuigMaximum() {
         return wielbasisVoertuigMaximum;
@@ -142,10 +147,7 @@ public class RdwResponse {
         this.maximumMassaTechnischMaximaal = maximumMassaTechnischMaximaal;
     }
 
-    @JsonProperty("kenteken")
-    public void setKenteken(String value) {
-        this.kenteken = value;
-    }
+  
 
     @JsonProperty("aantal_cilinders")
     public String getAantalCilinders() {
