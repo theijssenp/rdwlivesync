@@ -71,10 +71,75 @@ public class RdwResponse {
     private String afwijkendeMaximumSnelheid;
     private String jaarLaatsteRegistratieTellerstand;
     private String tellerstandoordeel;
+    private String vervaldatumApkDt;
+    private String codeToelichtingTellerstandoordeel;
+    private String tenaamstellenMogelijk;
+    private String datumTenaamstellingDt;
+    private String datumEersteToelatingDt;
+    private String datumEersteAfgifteNederlandDt;
+    private String hoogteVoertuig;
+    private String verticaleBelastingKoppelpuntGetrokkenVoertuig;
+    private String zuinigheidsclassificatie;
+    private String subcategorieNederland;
+    private String maximumLastOnderDeVoorasSenTezamenKoppeling;
+    private String hoogteVoertuigMinimum;
+    private String hoogteVoertuigMaximum;
+    private String vervaldatumTachograafDt;
+    private String lengteVoertuigMinimum;
+    private String lengteVoertuigMaximum;
+    private String breedteVoertuigMinimum;
+    private String breedteVoertuigMaximum;
+    private String massaBedrijfsklaarMinimaal;
+    private String massaBedrijfsklaarMaximaal;
+    private String maximumMassaTechnischMaximaal;
+    private String maximumMassaTechnischMinimaal;
+    private String wielbasisVoertuigMinimum;
+    private String wielbasisVoertuigMaximum;
 
     @JsonProperty("kenteken")
     public String getKenteken() {
         return kenteken;
+    }
+
+    @JsonProperty("wielbasis_voertuig_maximum")
+    public String getWielbasisVoertuigMaximum() {
+        return wielbasisVoertuigMaximum;
+    }
+
+    @JsonProperty("wielbasis_voertuig_maximum")
+    public void setWielbasisVoertuigMaximum(String wielbasisVoertuigMaximum) {
+        this.wielbasisVoertuigMaximum = wielbasisVoertuigMaximum;
+    }
+
+    @JsonProperty("wielbasis_voertuig_minimum")
+    public String getWielbasisVoertuigMinimum() {
+        return wielbasisVoertuigMinimum;
+    }
+
+    @JsonProperty("wielbasis_voertuig_minimum")
+    public void setWielbasisVoertuigMinimum(String wielbasisVoertuigMinimum) {
+        this.wielbasisVoertuigMinimum = wielbasisVoertuigMinimum;
+    }
+
+    @JsonProperty("maximum_massa_technisch_minimaal")
+    public String getMaximumMassaTechnischMinimaal() {
+        return maximumMassaTechnischMinimaal;
+    }
+
+    @JsonProperty("maximum_massa_technisch_minimaal")
+    public void setMaximumMassaTechnischMinimaal(String maximumMassaTechnischMinimaal) {
+        this.maximumMassaTechnischMinimaal = maximumMassaTechnischMinimaal;
+    }
+
+    @JsonProperty("maximum_massa_technisch_maximaal")
+
+    public String getMaximumMassaTechnischMaximaal() {
+        return maximumMassaTechnischMaximaal;
+    }
+
+    @JsonProperty("maximum_massa_technisch_maximaal")
+    public void setMaximumMassaTechnischMaximaal(String maximumMassaTechnischMaximaal) {
+        this.maximumMassaTechnischMaximaal = maximumMassaTechnischMaximaal;
     }
 
     @JsonProperty("kenteken")
@@ -91,7 +156,206 @@ public class RdwResponse {
     public void setAantalCilinders(String value) {
         this.aantalCilinders = value;
     }
-    
+
+    @JsonProperty("massa_bedrijfsklaar_minimaal")
+    public String getMassaBedrijfsklaarMinimaal() {
+        return massaBedrijfsklaarMinimaal;
+    }
+
+    @JsonProperty("massa_bedrijfsklaar_minimaal")
+    public void setMassaBedrijfsklaarMinimaal(String value) {
+        this.massaBedrijfsklaarMinimaal = value;
+    }
+
+    @JsonProperty("massa_bedrijfsklaar_maximaal")
+    public String getMassaBedrijfsklaarMaximaal() {
+        return massaBedrijfsklaarMaximaal;
+    }
+
+    @JsonProperty("massa_bedrijfsklaar_maximaal")
+    public void setMassaBedrijfsklaarMaximaal(String value) {
+        this.massaBedrijfsklaarMaximaal = value;
+    }
+
+    @JsonProperty("breedte_voertuig_minimum")
+    public String getBreedteVoertuigMinimum() {
+        return breedteVoertuigMinimum;
+    }
+
+    @JsonProperty("breedte_voertuig_minimum")
+    public void setBreedteVoertuigMinimum(String value) {
+        this.breedteVoertuigMinimum = value;
+    }
+
+    @JsonProperty("breedte_voertuig_maximum")
+    public String getBreedteVoertuigMaximum() {
+        return breedteVoertuigMaximum;
+    }
+
+    @JsonProperty("breedte_voertuig_maximum")
+    public void setBreedteVoertuigMaximum(String value) {
+    }
+
+    @JsonProperty("lengte_voertuig_maximum")
+    public String getLengteVoertuigMaximum() {
+        return lengteVoertuigMaximum;
+    }
+
+    @JsonProperty("lengte_voertuig_maximum")
+    public void setLengteVoertuigMaximum(String value) {
+        this.lengteVoertuigMaximum = value;
+    }
+
+    @JsonProperty("lengte_voertuig_minimum")
+    public String getLengteVoertuigMinimum() {
+        return lengteVoertuigMinimum;
+    }
+
+    @JsonProperty("lengte_voertuig_minimum")
+    public void setLengteVoertuigMinimum(String value) {
+        this.lengteVoertuigMinimum = value;
+    }
+
+    @JsonProperty("vervaldatum_tachograaf_dt")
+    public String getVervaldatumTachograafDt() {
+        return vervaldatumTachograafDt;
+    }
+
+    @JsonProperty("vervaldatum_tachograaf_dt")
+    public void setVervaldatumTachograafDt(String value) {
+        this.vervaldatumTachograafDt = value;
+    }
+
+    @JsonProperty("hoogte_voertuig_maximum")
+    public String getHoogteVoertuigMaximum() {
+        return hoogteVoertuigMaximum;
+    }
+
+    @JsonProperty("hoogte_voertuig_maximum")
+    public void setHoogteVoertuigMaximum(String value) {
+        this.hoogteVoertuigMaximum = value;
+    }
+
+    @JsonProperty("hoogte_voertuig_minimum")
+    public String getHoogteVoertuigMinimum() {
+        return hoogteVoertuigMinimum;
+    }
+
+    @JsonProperty("hoogte_voertuig_minimum")
+    public void setHoogteVoertuigMinimum(String value) {
+        this.hoogteVoertuigMinimum = value;
+    }
+
+    @JsonProperty("maximum_last_onder_de_vooras_sen_tezamen_koppeling")
+    public String getMaximumLastOnderDeVoorasSenTezamenKoppeling() {
+        return maximumLastOnderDeVoorasSenTezamenKoppeling;
+    }
+
+    @JsonProperty("maximum_last_onder_de_vooras_sen_tezamen_koppeling")
+    public void setMaximumLastOnderDeVoorasSenTezamenKoppeling(String value) {
+        this.maximumLastOnderDeVoorasSenTezamenKoppeling = value;
+    }
+
+    @JsonProperty("subcategorie_nederland")
+    public String getSubcategorieNederland() {
+        return subcategorieNederland;
+    }
+
+    @JsonProperty("subcategorie_nederland")
+    public void setSubcategorieNederland(String value) {
+        this.subcategorieNederland = value;
+    }
+
+    @JsonProperty("zuinigheidsclassificatie")
+    public String getZuinigheidsclassificatie() {
+        return zuinigheidsclassificatie;
+    }
+
+    @JsonProperty("zuinigheidsclassificatie")
+    public void setZuinigheidsclassificatie(String value) {
+        this.zuinigheidsclassificatie = value;
+    }
+
+    @JsonProperty("verticale_belasting_koppelpunt_getrokken_voertuig")
+    public String getVerticaleBelastingKoppelpuntGetrokkenVoertuig() {
+        return verticaleBelastingKoppelpuntGetrokkenVoertuig;
+    }
+
+    @JsonProperty("verticale_belasting_koppelpunt_getrokken_voertuig")
+    public void setVerticaleBelastingKoppelpuntGetrokkenVoertuig(String value) {
+        this.verticaleBelastingKoppelpuntGetrokkenVoertuig = value;
+    }
+
+    @JsonProperty("hoogte_voertuig")
+    public String getHoogteVoertuig() {
+        return hoogteVoertuig;
+    }
+
+    @JsonProperty("hoogte_voertuig")
+    public void setHoogteVoertuig(String value) {
+        this.hoogteVoertuig = value;
+    }
+
+    @JsonProperty("datum_eerste_afgifte_nederland_dt")
+    public String getDatumEersteAfgifteNederlandDt() {
+        return datumEersteAfgifteNederlandDt;
+    }
+
+    @JsonProperty("datum_eerste_afgifte_nederland_dt")
+    public void setDatumEersteAfgifteNederlandDt(String value) {
+        this.datumEersteAfgifteNederlandDt = value;
+    }
+
+    @JsonProperty("datum_eerste_toelating_dt")
+    public String getDatumEersteToelatingDt() {
+        return datumEersteToelatingDt;
+    }
+
+    @JsonProperty("datum_eerste_toelating_dt")
+    public void setDatumEersteToelatingDt(String value) {
+        this.datumEersteToelatingDt = value;
+    }
+
+    @JsonProperty("datum_tenaamstelling_dt")
+    public String getDatumTenaamstellingDt() {
+        return datumTenaamstellingDt;
+    }
+
+    @JsonProperty("datum_tenaamstelling_dt")
+    public void setDatumTenaamstellingDt(String value) {
+        this.datumTenaamstellingDt = value;
+    }
+
+    @JsonProperty("tenaamstellen_mogelijk")
+    public String getTenaamstellenMogelijk() {
+        return tenaamstellenMogelijk;
+    }
+
+    @JsonProperty("tenaamstellen_mogelijk")
+    public void setTenaamstellenMogelijk(String value) {
+        this.tenaamstellenMogelijk = value;
+    }
+
+    @JsonProperty("vervaldatum_apk_dt")
+    public String getVervaldatumApkDt() {
+        return vervaldatumApkDt;
+    }
+
+    @JsonProperty("vervaldatum_apk_dt")
+    public void setVervaldatumApkDt(String value) {
+        this.vervaldatumApkDt = value;
+    }
+
+    @JsonProperty("code_toelichting_tellerstandoordeel")
+    public String getCodeToelichtingTellerstandoordeel() {
+        return codeToelichtingTellerstandoordeel;
+    }
+
+    @JsonProperty("code_toelichting_tellerstandoordeel")
+    public void setCodeToelichtingTellerstandoordeel(String value) {
+        this.codeToelichtingTellerstandoordeel = value;
+    }
+
     @JsonProperty("tellerstandoordeel")
     public String getTellerstandoordeel() {
         return tellerstandoordeel;
