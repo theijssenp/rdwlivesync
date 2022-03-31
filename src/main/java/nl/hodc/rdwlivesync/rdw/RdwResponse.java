@@ -101,12 +101,22 @@ public class RdwResponse {
     private String datumEersteTenaamstellingInNederland;
     private String datumEersteTenaamstellingInNederlandDt;
     private String maximaleConstructiesnelheid;
-
-    
+    private String registratieDatumGoedkeuringAfschrijvingsmomentBpm;
 
     @JsonProperty("rupsonderstelconfiguratiecode")
     public String getRupsonderstelconfiguratiecode() {
         return rupsonderstelconfiguratiecode;
+    }
+
+    @JsonProperty("registratie_datum_goedkeuring_afschrijvingsmoment_bpm")
+    public String getRegistratieDatumGoedkeuringAfschrijvingsmomentBpm() {
+        return registratieDatumGoedkeuringAfschrijvingsmomentBpm;
+    }
+
+    @JsonProperty("registratie_datum_goedkeuring_afschrijvingsmoment_bpm")
+    public void setRegistratieDatumGoedkeuringAfschrijvingsmomentBpm(
+            String registratieDatumGoedkeuringAfschrijvingsmomentBpm) {
+        this.registratieDatumGoedkeuringAfschrijvingsmomentBpm = registratieDatumGoedkeuringAfschrijvingsmomentBpm;
     }
 
     @JsonProperty("maximale_constructiesnelheid")
@@ -118,7 +128,6 @@ public class RdwResponse {
     public void setMaximaleConstructiesnelheid(String maximaleConstructiesnelheid) {
         this.maximaleConstructiesnelheid = maximaleConstructiesnelheid;
     }
-
 
     @JsonProperty("datum_eerste_tenaamstelling_in_nederland_dt")
     public String getDatumEersteTenaamstellingInNederlandDt() {
