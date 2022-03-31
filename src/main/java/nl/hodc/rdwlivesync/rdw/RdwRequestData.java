@@ -17,7 +17,7 @@ public class RdwRequestData {
 
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
         // request op basis van datum_eerste_afgifte_nederland bv 20201218
-        String resourceURL = "https://opendata.rdw.nl/resource/m9d7-ebf2.json?$select=*&$limit=100000&$where=datum_eerste_afgifte_nederland+=+'"+ datumEersteAfgifte + "'";
+        String resourceURL = "https://opendata.rdw.nl/resource/m9d7-ebf2.json?$select=*&$limit=100000&$where=datum_tenaamstelling+=+'"+ datumEersteAfgifte + "'";
 
         HttpEntity<String> entity = new HttpEntity<String>(headers);
         ResponseEntity<String> response = restTemplate.exchange(resourceURL, HttpMethod.GET, entity, String.class);

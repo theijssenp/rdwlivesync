@@ -98,10 +98,46 @@ public class RdwResponse {
     private String technischToelaatbaarMassaKoppelpunt;
     private String typeRemsysteemVoertuigCode;
     private String rupsonderstelconfiguratiecode;
+    private String datumEersteTenaamstellingInNederland;
+    private String datumEersteTenaamstellingInNederlandDt;
+    private String maximaleConstructiesnelheid;
+
+    
 
     @JsonProperty("rupsonderstelconfiguratiecode")
     public String getRupsonderstelconfiguratiecode() {
         return rupsonderstelconfiguratiecode;
+    }
+
+    @JsonProperty("maximale_constructiesnelheid")
+    public String getMaximaleConstructiesnelheid() {
+        return maximaleConstructiesnelheid;
+    }
+
+    @JsonProperty("maximale_constructiesnelheid")
+    public void setMaximaleConstructiesnelheid(String maximaleConstructiesnelheid) {
+        this.maximaleConstructiesnelheid = maximaleConstructiesnelheid;
+    }
+
+
+    @JsonProperty("datum_eerste_tenaamstelling_in_nederland_dt")
+    public String getDatumEersteTenaamstellingInNederlandDt() {
+        return datumEersteTenaamstellingInNederlandDt;
+    }
+
+    @JsonProperty("datum_eerste_tenaamstelling_in_nederland_dt")
+    public void setDatumEersteTenaamstellingInNederlandDt(String datumEersteTenaamstellingInNederlandDt) {
+        this.datumEersteTenaamstellingInNederlandDt = datumEersteTenaamstellingInNederlandDt;
+    }
+
+    @JsonProperty("datum_eerste_tenaamstelling_in_nederland")
+    public String getDatumEersteTenaamstellingInNederland() {
+        return datumEersteTenaamstellingInNederland;
+    }
+
+    @JsonProperty("datum_eerste_tenaamstelling_in_nederland")
+    public void setDatumEersteTenaamstellingInNederland(String datumEersteTenaamstellingInNederland) {
+        this.datumEersteTenaamstellingInNederland = datumEersteTenaamstellingInNederland;
     }
 
     @JsonProperty("rupsonderstelconfiguratiecode")
