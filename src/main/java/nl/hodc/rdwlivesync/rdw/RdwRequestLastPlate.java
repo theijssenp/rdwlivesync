@@ -30,10 +30,12 @@ public class RdwRequestLastPlate {
             System.out.println("Status request niet OK");
         }
         String jsonshit = response.getBody();
-        jsonshit = jsonshit.replace("[{\"vehicle\":\"1\",\"code\":", "");
-        jsonshit = jsonshit.replace("}]", "");
-        jsonshit = jsonshit.replace("\"", "");
-        jsonshit = jsonshit.replace("-", "");
+        if (jsonshit != null) {
+            jsonshit = jsonshit.replace("[{\"vehicle\":\"1\",\"code\":", "");
+            jsonshit = jsonshit.replace("}]", "");
+            jsonshit = jsonshit.replace("\"", "");
+            jsonshit = jsonshit.replace("-", "");
+        }
         return jsonshit;
     }
 }

@@ -102,10 +102,21 @@ public class RdwResponse {
     private String datumEersteTenaamstellingInNederlandDt;
     private String maximaleConstructiesnelheid;
     private String registratieDatumGoedkeuringAfschrijvingsmomentBpm;
+    private String registratieDatumGoedkeuringAfschrijvingsmomentBpmDt;
+
 
     @JsonProperty("rupsonderstelconfiguratiecode")
     public String getRupsonderstelconfiguratiecode() {
         return rupsonderstelconfiguratiecode;
+    }
+    @JsonProperty("registratie_datum_goedkeuring_afschrijvingsmoment_bpm_dt")
+    public String getRegistratieDatumGoedkeuringAfschrijvingsmomentBpmDt() {
+        return registratieDatumGoedkeuringAfschrijvingsmomentBpmDt;
+    }
+    @JsonProperty("registratie_datum_goedkeuring_afschrijvingsmoment_bpm_dt")
+    public void setRegistratieDatumGoedkeuringAfschrijvingsmomentBpmDt(
+            String registratieDatumGoedkeuringAfschrijvingsmomentBpmDt) {
+        this.registratieDatumGoedkeuringAfschrijvingsmomentBpmDt = registratieDatumGoedkeuringAfschrijvingsmomentBpmDt;
     }
 
     @JsonProperty("registratie_datum_goedkeuring_afschrijvingsmoment_bpm")
