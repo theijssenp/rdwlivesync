@@ -103,7 +103,37 @@ public class RdwResponse {
     private String maximaleConstructiesnelheid;
     private String registratieDatumGoedkeuringAfschrijvingsmomentBpm;
     private String registratieDatumGoedkeuringAfschrijvingsmomentBpmDt;
+    private String voidString;
 
+    @JsonProperty("verl_cab_ind")
+    public String getVerl_cab_ind() {
+        return voidString;
+    }
+
+    @JsonProperty("verl_cab_ind")
+    public void setVerl_cab_ind(String value) {
+        this.voidString = value;
+    }
+    
+    @JsonProperty("massa_alt_aandr")
+    public String getMassa_alt_aandr() {
+        return voidString;
+    }
+
+    @JsonProperty("massa_alt_aandr")
+    public void setMassa_alt_aandr(String value) {
+        this.voidString = value;
+    }
+
+    @JsonProperty("gem_lading_wrde")
+    public String getGem_lading_wrde() {
+        return voidString;
+    }
+
+    @JsonProperty("gem_lading_wrde")
+    public void setGem_lading_wrde(String value) {
+        this.voidString = value;
+    }
 
     @JsonProperty("rupsonderstelconfiguratiecode")
     public String getRupsonderstelconfiguratiecode() {
@@ -434,6 +464,16 @@ public class RdwResponse {
     @JsonProperty("vervaldatum_apk_dt")
     public void setVervaldatumApkDt(String value) {
         this.vervaldatumApkDt = value;
+    }
+
+    @JsonProperty("aerodyn_voorz")
+    public String getAerodyn_voorz() {
+        return voidString;
+    }
+
+    @JsonProperty("aerodyn_voorz")
+    public void setAerodyn_voorz(String value) {
+        this.voidString = value;
     }
 
     @JsonProperty("code_toelichting_tellerstandoordeel")
