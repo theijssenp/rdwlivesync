@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@hodc.nl
+    DocumentRoot /var/www/rdw.hodc.nl/
+        ServerName rdw.hodc.nl
+        ServerAlias www.rdw.hodc.nl
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+

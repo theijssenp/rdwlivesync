@@ -4,6 +4,7 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.*;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class RdwResponse {
 
     private String kenteken;
@@ -738,7 +739,7 @@ public class RdwResponse {
 
     @JsonProperty("eerste_kleur")
     public String getEersteKleur() {
-        if (eersteKleur == "Niet geregistreerd") {
+        if ("Niet geregistreerd".equals(eersteKleur)) {
             return null;
         } else {
             return eersteKleur;
@@ -753,7 +754,7 @@ public class RdwResponse {
 
     @JsonProperty("tweede_kleur")
     public String getTweedeKleur() {
-        if (tweedeKleur == "Niet geregistreerd") {
+        if ("Niet geregistreerd".equals(tweedeKleur)) {
             return null;
         } else {
             return tweedeKleur;
@@ -807,6 +808,9 @@ public class RdwResponse {
 
     @JsonProperty("datum_eerste_toelating")
     public String getDatumEersteToelating() {
+        if (datumEersteToelating == null || datumEersteToelating.length() < 8) {
+            return datumEersteToelating;
+        }
         return datumEersteToelating.substring(6, 8) + "/" + datumEersteToelating.substring(4, 6) + "/"
                 + datumEersteToelating.substring(0, 4);
     }
